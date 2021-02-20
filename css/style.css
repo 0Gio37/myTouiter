@@ -1,0 +1,274 @@
+:root{
+    --main-color: rgb(238, 166, 32);
+    --second-color: rgb(134, 133, 133);
+    --third-color : rgb(0, 194, 178);
+    --fourth-color: rgb(49, 47, 47);
+    --fifth-color: #3b5998;
+    --white-color: #FFF;
+}
+
+@font-face{
+    font-family:"klavika-bold";
+    text-transform:none;
+    src:
+    url("../font/klavika-bold.otf") format("woff");
+}
+@font-face{
+    font-family:"klavika-medium";
+    text-transform:none;
+    src:url("../font/klavika-medium.otf") format("woff");
+}
+
+body{
+    font-family:"klavika-medium", sans-serif;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--fourth-color);
+}
+header{
+    position: sticky;
+    top: 0rem;
+    z-index: 2;
+}
+
+h1{
+    font-size: 5rem;
+    font-family: 'klavika-bold', sans-serif;
+}
+
+h2{
+    font-size: 3rem;
+    font-family: 'klavika-bold', sans-serif;
+    text-align: center;
+    color: var(--main-color);
+    margin: 5rem 0rem;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-family: 'klavika-bold', sans-serif;
+    text-align: center;
+    color: var(--main-color);
+    margin: 2rem 0rem;
+}
+
+.main-header, .main-footer{
+    background-color: var(--fifth-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color:#FFF;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.main-container{
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.content-user{
+    width: 22%;
+}
+ .form-group, .btn{
+    padding-right: 10%;
+ }
+
+.btn, .form-control{
+    font-family:"klavika-medium", sans-serif;
+    padding-bottom: 1rem;
+    padding-top: 1rem; 
+    margin-bottom: 4rem;
+    background-color: var(--main-color);
+    color : var(--fourth-color);
+    border: 1px solid var(--main-color);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+.form-user{
+    background-image: url(../img/iphone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left : 10%;
+    padding-right: 25%;
+    padding-bottom: 30rem;
+    padding-top: 15rem;
+    position: sticky;
+    top: 15rem;
+}
+
+.btn-primary{
+    font-family:"klavika-bold", sans-serif;
+    float: right;
+}
+
+.btn-primary:hover{
+    background-color: var(--third-color);
+}
+
+.content-touit{
+    width: 66%;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-left: 1px solid var(--second-color);
+    border-right: 1px solid var(--second-color);
+}
+
+.touit-list{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+/* DEBUT PARAMETRES SECTION  DES TOUITS */
+.touit-item{
+    margin: 1em;
+    border-radius: 10px;
+    border: 1px solid var(--fifth-color);
+    width: 250px;
+    height: 160px;
+    box-shadow: 3px 3px 3px var(--fifth-color);
+    color: var(--fourth-color);
+    padding: 0.5rem;
+    background-color: var(--third-color);
+    overflow-wrap:break-word;
+}
+.user-message{
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+}
+.user-date{
+    width: 100%;
+    text-align: right;
+    color: var(--second-color);
+}
+.user-pseudo{
+    text-align: right;
+    margin: 0;
+    font-family:"klavika-bold";
+    font-style: italic;
+    text-decoration: underline;
+}
+.btn-touit{
+    display: flex;
+}
+.btn-touit-like, .btn-touit-comment{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 5%;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--fourth-color);
+}
+
+.btn-touit-like{
+    background-image: url(../img/ithumb.svg);
+    background-position: center;
+    background-size: cover;
+}
+.btn-touit-comment{
+    background-image: url(../img/imess.svg);
+    background-position: center;
+    background-size: cover;
+}
+.btn-touit-comment:hover{
+    background-color: var(--fifth-color);
+    border-radius: 10px;
+    border: 1px solid var(--fifth-color);
+}
+.btn-touit-like:hover{
+    background-color: var(--fifth-color);
+    border-radius: 10px;
+    border: 1px solid var(--fifth-color);
+}
+.classSupp{
+    display: block;
+    background-color: red;
+    margin-left: auto;
+    margin-top: 0.0em;
+    width: 15px; 
+    height: 15px;
+    font-size: 0.5em;
+    border-radius: 5px;
+    border: 0.2px solid black;
+    cursor: pointer;
+}
+/* FIN DES PARAMETRES SECTION DES TOUITS */
+
+
+
+.content-trending{
+    width: 12%;
+    min-height: 750px
+}
+.actu-list{
+    position: sticky;
+    top: 10rem;
+}
+
+.like-items, .trend-items, .influ-items{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    color: #FFF;
+    font-size: 1em;
+}
+
+.separate-items{
+    border-top: 2px solid var(--main-color);
+    width: 75%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/*responsive*/
+@media screen and (max-width: 85em){
+    .content-user{
+        background-position: center;
+    }
+    .btn, .form-control{
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem; 
+        margin-bottom: 2rem;
+        font-weight: normal;
+    }
+    .btn-primary{
+        margin-top: 1rem;
+    }
+    .form-user{
+        padding-top: 10rem;
+    }
+}
+@media screen and (max-width: 60em){
+    .content-user{
+        background-position: center;
+    }
+    .btn, .form-control{
+        font-size: 0.5rem;
+        margin-bottom: 2rem;
+        font-weight: normal;
+        padding: 0rem;
+    }
+    .form-user{
+        padding-top: 3rem;
+    }
+}
+@media screen and (max-width: 40em){
+    h3{
+        font-size: 1em;
+    }
+}
+

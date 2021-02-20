@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr_FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ---my touiteur--- </title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>[ theTouiteur ]</h1>
+    </header>
+
+    <main class='main-container' id='main-container'>
+        <section class="main-content content-user" id="content-user">
+                <form class="form-user">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="form-control-pseudo" minlength="3" maxlength="16" placeholder="... Pseudo ...">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="form-control-message" maxlength="256" minlength="3" placeholder="... Message ...">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="btn-primary">@ TOUIT @</button>
+                </form>
+        </section>
+
+        <section class="main-content content-touit" id="content-touit">
+            <h2>Derniers Touits</h2>
+            <div class="touit-list"></div>    
+        </section>
+
+        <section class="main-content content-trending" id="content-trending">
+            <div class="actu-list">
+                <h3>Touits les + likés</h3>
+                <div class="like-items"></div>
+
+                <div class="separate-items"></div>
+
+                <h3>Termes les + cités</h3>
+                <div class="trend-items"></div>
+
+                <div class="separate-items"></div>
+
+                <h3>Influenceurs les + Actifs</h3>
+                <div class="influ-items"></div>
+            </div>
+        </section>
+
+    
+    </main>
+
+    <footer class="main-footer" id="main-footer">
+        <p class="footer-promo" id="footer-promo">_ Promo DWWM 2020 - 2 / GM _</p>
+    </footer>
+   
+    <script src="touit_ajax.js"></script>
+</body>
+</html>
